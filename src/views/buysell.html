@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome page</title><style>
+    body,h1,h2,h3,h4,h5,h6 {
+        color: white;
+        font-size: 20px;
+                font-family: "Amatic SC";
+            }
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-yellow" style="display:none;background-color:yellow;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">My Profile</a>
+  <a href="#" class="w3-bar-item w3-button">BUY</a>
+  <a href="#" class="w3-bar-item w3-button">SELL</a>
+  <a href="#" class="w3-bar-item w3-button">LOGOUT</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" style="background-color:black;" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container" style="background-color:black;">
+   <strong> <h1>Electra</h1> </strong>
+  </div>
+</div>
+
+
+
+<div class="w3-container">
+
+</div>
+
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("mySidebar").style.backgroundColor = "yellow";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<br/>
+<div class="jumbotron pull-left max">
+    <div class="container text-center">
+        
+        <div class= "col-sm-6 col-md-4">
+            <img src="photo.png" width="120" height="120">
+            <div class="container-fluid pull-right">
+                <strong><p>Profile</p></strong>
+                <li>Name</li>
+                <li>Area</li>
+                <li>Stock</li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<div class="row" style="margin-left:40px;">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbail">
+        <p>ffff</p>
+    </div>
+    <div class="caption">
+        <p class="description">fffff</p>
+        <div class="clearfix">
+            <div class="button pull-left">
+                <a href="" class="btn btn-success pull-right">
+                buy</a>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="col-sm-6 col-md-4">
+        <div class="thumbail">
+        <p>ffff</p>
+    </div>
+    <div class="caption">
+        <p class="description">fffff</p>
+        <div class="clearfix">
+            <div class="button pull-left">
+                <a href="" class="btn btn-success pull-right">
+                sell</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
